@@ -109,3 +109,24 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Ajustes para Telas Menores */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.rodape {
+  background: var(--primaria);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
