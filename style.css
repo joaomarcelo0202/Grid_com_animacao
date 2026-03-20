@@ -6,7 +6,7 @@
 
 :root {
   --primaria: #1e272e;
-  --destaque: #05c46b;
+  --destaque: #05c4b4;
   --fundo: #f1f2f6;
 }
 
@@ -78,7 +78,29 @@ body {
   border-radius: 12px;
   margin-bottom: 2rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  animation: slideIn 0.8s ease-out; /* ANIMAÇÃO 1 */
+  animation: slideIn 0.8s ease-out; 
+}
+
+.hero-texto {
+  flex: 1; 
+}
+
+.hero-imagem {
+  flex: 1; 
+  overflow: hidden; 
+  border-radius: 12px;
+}
+
+.hero-imagem img {
+  width: 100%;       
+  height: 350px;    
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.5s;
+}
+
+.hero-imagem img:hover {
+  transform: scale(1.1);
 }
 
 .cards {
@@ -93,7 +115,7 @@ body {
   border-radius: 8px;
   border-top: 3px solid var(--destaque);
   transition: transform 0.3s;
-  animation: fadeIn 1.2s ease-in; /* ANIMAÇÃO 2 */
+  animation: fadeIn 1.2s ease-in;
 }
 
 .card:hover {
@@ -130,3 +152,4 @@ body {
   padding: 2rem;
   margin-top: 3rem;
 }
+
