@@ -30,3 +30,41 @@ body {
   color: white;
   border-bottom: 4px solid var(--destaque);
 }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #2f3640;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu a {
+  color: #dcdde1;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--destaque);
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--destaque);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
